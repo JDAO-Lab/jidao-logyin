@@ -1,0 +1,32 @@
+<!-- fragments/custom_base.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:fragment="commonHead">
+        <meta charset="UTF-8">
+        <title th:text="${title+' - '+sys.short_title}"></title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="shortcut icon" th:if="${sys.web_ico}" th:href="${sys.web_ico}" />
+    </th:block>
+    <th:block th:fragment="copyrightText">
+        Copyright &#169; 2016-[[${#dates.year(#dates.createNow())}]] [[${sys.author}]] All rights reserved
+    </th:block>
+    <th:block th:fragment="custonStyleFrom">
+        <style>
+            .layui-form-label{
+                width: 28%;
+                text-align: right;
+                padding: 0px;
+            }
+            .layui-input-block {
+                margin-left: 30%;
+            }
+            .layui-form-mid{
+                margin-left: 30%;
+            }
+        </style>
+    </th:block>
+</head>
+</html>
