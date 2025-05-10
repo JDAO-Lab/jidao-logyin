@@ -1,4 +1,7 @@
 # 项目介绍
+
+官网地址：https://logyin.jodoo.cc/ 加群这里。
+
 logYin admin后台管理系统，基于java11、maven3.6.1、pear-admin开发的一款通用开发框架。
 
 # 运行环境
