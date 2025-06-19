@@ -199,3 +199,8 @@ analysis(1,1);//前者为类型，后者为数字，类型信息在StaticTypeEnu
 ## 6.子系统开发说明
 1.您需要替换当前的包名，模块名及pom中的logYin的字段，需注意的事模块需要再执行时点选模块名进入设置，或点击idea菜单Project Structure，然后点击logYin，进行修改为指定模块名即可保存。
 2.关于复制的文件，您必须复制src和pom文件到新的开发目录后，才可进行包名、模块名的修改。
+
+## 7.跳过测试打包
+```
+mvn package -DskipTests=true
+```
